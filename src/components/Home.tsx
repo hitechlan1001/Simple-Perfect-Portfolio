@@ -13,7 +13,7 @@ export default function Home() {
             <div className="p-2 center min-h-[200px]">
               <div className="ring"></div>
               <div className="relative p-2">
-                <img src="imgs/avatar1.png" className="w-[200px] rounded-full" />
+                <img src="imgs/avatar.png" className="w-[200px] rounded-full" />
               </div>
             </div>
           </Fade>
@@ -26,14 +26,16 @@ export default function Home() {
           </Fade>
           <Fade delay={1400} triggerOnce={true}>
             <p className="text-[#8a8a8a] text-sm md:text-md">
-            I am a FullStack | Blockchain developer with 8 years of experience.
-            As a blockchain full stack developer, I have participated in lot's of full stack and blockchain projects such as DApp, DEFI, DEX, DAO, NFT, MARKETPLACE, P2E GAME on various blockchains.
-            Most of the time, I am working on Bitcoin, Ethereum, BSC, Polygon, Availanche, Venom, Solana, Near and XRP blockchains.
+            I am a Blockchain Developer specializing in EVM and Solana ecosystems.
+            <strong className="text-[#666] dark:text-[#aaa]"> Currently, I am focusing on Solana trading bots, especially Solana arbitrage bots.</strong>
+            I build comprehensive blockchain solutions including DApps, DeFi protocols, DEXs, NFT marketplaces, DAOs, P2E games, token launchpads, and trading bots.
+            My expertise spans smart contract development, MEV solutions, transaction optimization, and full-stack Web3 applications using TypeScript, Rust, and Solidity.
+            I work across multiple blockchain networks, creating innovative decentralized solutions for various use cases.
             </p>
           </Fade>
           <Bounce delay={1600} triggerOnce={true}>
             <AwesomeButton
-              type="danger"
+              type="whatsapp"
               className="w-[200px] uppercase"
               href={socialLinks.telegram}
             >

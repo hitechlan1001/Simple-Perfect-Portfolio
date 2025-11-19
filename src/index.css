@@ -90,12 +90,12 @@ body {
 @keyframes ring {
   0% {
     transform: rotate(0deg);
-    box-shadow: 1px 6px 2px red;
+    box-shadow: 1px 6px 2px #2b532f;
   }
 
   100% {
     transform: rotate(360deg);
-    box-shadow: 1px 6px 2px red;
+    box-shadow: 1px 6px 2px #2b532f;
   }
 }
 
@@ -123,4 +123,25 @@ body {
   50% {
     color: black;
   }
+}
+
+/* Custom Discord button styling */
+a[href*="discordapp.com"] .aws-btn__wrapper,
+a[href*="discordapp.com"] .aws-btn__wrapper-inner {
+  background: #5865F2 !important;
+}
+
+a[href*="discordapp.com"]:hover .aws-btn__wrapper,
+a[href*="discordapp.com"]:hover .aws-btn__wrapper-inner {
+  background: #4752C4 !important;
+}
+
+a[href*="discordapp.com"] .aws-btn__wrapper::before,
+a[href*="discordapp.com"] .aws-btn__wrapper::after {
+  background: #5865F2 !important;
+}
+
+a[href*="discordapp.com"]:hover .aws-btn__wrapper::before,
+a[href*="discordapp.com"]:hover .aws-btn__wrapper::after {
+  background: #4752C4 !important;
 }

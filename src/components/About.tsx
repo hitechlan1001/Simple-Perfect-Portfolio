@@ -1,6 +1,5 @@
 import "react-awesome-button/dist/styles.css";
 import { Fade } from "react-awesome-reveal";
-import { PiStudentFill } from "react-icons/pi";
 import { FaTools } from "react-icons/fa";
 import { SiRetool } from "react-icons/si";
 
@@ -8,39 +7,15 @@ import { skillSets, knowledgeSets } from "../data/aboutData";
 
 export default function About() {
   return (
-    <div className="flex flex-col h-full px-3 overflow-x-hidden overflow-y-auto dark:bg-[#2a2a2a] bg-white py-100 transition-all duration-300">
-      <div className="flex items-center justify-center w-full md:min-h-full mb-[80px] md:mb-[50px] mt-[70px] md:mt-2">
-        <div className="max-w-[650px] items-start justify-start flex flex-col gap-7 text-center relative w-full">
+    <div className="flex flex-col h-screen px-3 overflow-x-hidden overflow-y-scroll dark:bg-[#2a2a2a] bg-white py-100 transition-all duration-300">
+      <div className="flex items-start justify-center w-full mb-[80px] md:mb-[50px] mt-[70px] md:mt-2 pb-8">
+        <div className="max-w-[650px] items-start justify-start flex flex-col gap-7 text-center relative w-full mt-20">
           <Fade delay={1000} triggerOnce={true} className="w-full">
-            <h1 className="uppercase text-[25px] md:text-[30px] font-semibold dark:text-[#cacaca] text-[#434343] flex gap-2 items-center justify-start">
-              <PiStudentFill />
-              Education
-            </h1>
-            <div className="flex items-center justify-start dark:bg-[#313131] bg-gray-100 p-1 rounded-md w-full">
-              {/* <img
-                src="/imgs/universityMark.jpg"
-                alt=""
-                className="w-[150px] object-cover rounded-md"
-              /> */}
-              <div className="flex flex-col items-start justify-start gap-3 p-4">
-                <span className="text-sm md:text-2xl dark:text-gray-200 text-[#434343]">
-                  University of Belgrade
-                </span>
-                <p className="text-[#8a8a8a] text-md text-left">
-                  {`2014.4 ~ 2018.5`}
-                </p>
-                <p className="text-[#8a8a8a] text-md text-left">
-                  Bachelor Degree of Computer Science
-                </p>
-              </div>
-            </div>
-          </Fade>
-          <Fade delay={1500} triggerOnce={true} className="w-full">
             <h1 className="flex items-center justify-start gap-4 uppercase text-[25px] md:text-[30px] font-semibold dark:text-[#cacaca] text-[#434343]">
               <FaTools size={24} />
               Skill Sets
             </h1>
-            <div className="grid items-center justify-start w-full grid-cols-4 gap-3 md:grid-cols-6">
+            <div className="grid items-center justify-start w-full grid-cols-3 gap-3 md:grid-cols-4">
               {skillSets.map((item, key) => (
                 <div
                   key={key}

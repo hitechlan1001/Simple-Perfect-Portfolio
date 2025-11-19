@@ -1,6 +1,6 @@
 import { AwesomeButton } from "react-awesome-button";
 import { Fade } from "react-awesome-reveal";
-import { BsDiscord, BsGithub, BsLinkedin, BsTelegram, BsTwitter } from "react-icons/bs";
+import { BsDiscord, BsGithub, BsLinkedin, BsTelegram, BsTwitter, BsEnvelope } from "react-icons/bs";
 import { socialLinks } from "../data/socialLinks";
 
 export default function Contact() {
@@ -21,11 +21,11 @@ export default function Contact() {
             <small className="dark:text-[#9a9a9a] text-[#6e6e6e]">
               {`If you want to get in touch, talk to me about a project collaboration, or just say hi, please send an email to `}
               <a
-                href="mailto:mateo.kova0510@gmail.com"
+                href="mailto:hitechlan2008@gmail.com"
                 className="text-2xl dark:text-[#bbbbbb] transition-all duration-300 dark:hover:text-white text-[#787878] hover:text-[#020202]"
               >
                 {" "}
-                mateo.kova0510@gmail.com
+                hitechlan2008@gmail.com
                 {"  "}
               </a>
               and let's talk.
@@ -34,7 +34,7 @@ export default function Contact() {
           <div className="w-full">
             <Fade delay={1500} triggerOnce={true}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d136834.1519573059!2d-80.9238325!3d46.5225589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1639991650837!5m2!1sen!2sbd"
+                src="https://www.google.com/maps?q=34+Ash+St,+San+Benito,+TX&hl=en&z=16&output=embed"
                 style={{ border: 0, width: "100%", height: "100%" }}
                 allowFullScreen={true}
                 loading="lazy"
@@ -47,7 +47,7 @@ export default function Contact() {
               Let's get social
             </h1>
             <p className="dark:text-[#9a9a9a] text-center md:text-left text-sm text-[#747474]">
-              Follow profiles on GitHub and Linkedin.
+              Connect with me on GitHub, Telegram, Discord, or Gmail.
             </p>
           </Fade>
 
@@ -59,18 +59,12 @@ export default function Contact() {
                   <span className="text-sm font-light uppercase">Twitter</span>
                 </span>
               </AwesomeButton> */}
-              <AwesomeButton type="linkedin" href={socialLinks.linkedin}>
+              {/* <AwesomeButton type="linkedin" href={socialLinks.linkedin}>
                 <span className="flex items-center justify-center gap-1">
                   <BsLinkedin size={20} />
                   <span className="text-sm font-light uppercase">Linkedin</span>
                 </span>
-              </AwesomeButton>
-              <AwesomeButton type="instagram" href={socialLinks.discord}>
-                <span className="flex items-center justify-center gap-1">
-                  <BsDiscord size={20} />
-                  <span className="text-sm font-light uppercase">Discord</span>
-                </span>
-              </AwesomeButton>
+              </AwesomeButton> */}
               <AwesomeButton type="github" href={socialLinks.github}>
                 <span className="flex items-center justify-center gap-1">
                   <BsGithub size={20} />
@@ -81,6 +75,18 @@ export default function Contact() {
                 <span className="flex items-center justify-center gap-1">
                   <BsTelegram size={20} />
                   <span className="text-sm font-light uppercase">Telegram</span>
+                </span>
+              </AwesomeButton>
+              <AwesomeButton type="primary" href={socialLinks.discord}>
+                <span className="flex items-center justify-center gap-1">
+                  <BsDiscord size={20} />
+                  <span className="text-sm font-light uppercase">Discord</span>
+                </span>
+              </AwesomeButton>
+              <AwesomeButton type="secondary" href={socialLinks.gmail}>
+                <span className="flex items-center justify-center gap-1">
+                  <BsEnvelope size={20} />
+                  <span className="text-sm font-light uppercase">Gmail</span>
                 </span>
               </AwesomeButton>
             </div>

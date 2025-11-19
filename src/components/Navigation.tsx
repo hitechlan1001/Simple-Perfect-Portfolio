@@ -29,9 +29,9 @@ function Navigation() {
               className="flex items-center justify-center "
             >
               <div
-                className={`p-2 transition-all duration-300 hover:bg-red-600 hover:rounded-full hover:bg-opacity-20 relative tooltip ${
+                className={`p-2 transition-all duration-300 hover:bg-[#2b532f] hover:rounded-full hover:bg-opacity-20 relative tooltip ${
                   router.pathname === page.path &&
-                  "bg-red-600 rounded-full bg-opacity-90"
+                  "bg-[#2b532f] rounded-full bg-opacity-90"
                 }`}
               >
                 {page.icon}

@@ -1,6 +1,6 @@
 export const socialLinks = {
-  github: "https://github.com/mateo-kova/",
-  discord: "https://discordapp.com/users/889578494944763905",
-  linkedin: "https://www.linkedin.com/in/mateo-kova/",
-  telegram: "https://t.me/mateokova0510",
+  github: "https://github.com/WSOL12",
+  telegram: "https://t.me/wsol12",
+  discord: "https://discord.com/users/367009301090402325",
+  gmail: "mailto:hitechlan2008@gmail.com",
 };
